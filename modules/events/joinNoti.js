@@ -47,7 +47,7 @@ module.exports.run = async function({ api, event, Users }) {
     return;
   }
   if (event.logMessageData.addedParticipants && Array.isArray(event.logMessageData.addedParticipants) && event.logMessageData.addedParticipants.some(i => i.userFbId == api.getCurrentUserID())) {
-    api.changeNickname(`${(!global.config.BOTNAME) ? "Your Baby" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
+    api.changeNickname(`[ ${global.config.PREFIX} ] • ${(!global.config.BOTNAME) ? "Your Baby" : global.config.BOTNAME}`, threadID, api.getCurrentUserID());
     
     let gifUrl = 'https://i.imgur.com/4HMupHz.gif';
 let gifPath = __dirname + '/cache/join.gif';
