@@ -126,9 +126,9 @@ module.exports.run = async function ({ api, event, args, getText }) {
         "❾",
         "❿",
       ];
-      msg += `╭[ ${numberFont[i]} ]─❍ ${
+      msg += `╭${numberFont[i]}─• ${
         category.charAt(0).toUpperCase() + category.slice(1)
-      }\n╰─◗ ${commandNames.join(", ")}\n`;
+      }\n╰─◗ ⭓${commandNames.join(" ")}\n`;
     }
 
     const numberFontPage = [
@@ -181,7 +181,7 @@ module.exports.run = async function ({ api, event, args, getText }) {
     fs.writeFileSync(path, Buffer.from(data, "utf-8"));
     imgP.push(fs.createReadStream(path)); */
     const config = require("./../../config.json")
-    const msgg =  `╭──────────────╮\n│𝖢𝗈𝗆𝗆𝖺𝗇𝖽 & 𝖢𝖺𝗍𝖾𝗀𝗈𝗋𝗒│\n╰──────────────╯\n‣ Bot Owner: ${config.DESIGN.Admin}\n ${msg} \n◖Total pages available: ${totalPages}.`;
+    const msgg =  `‣ Bot Owner: ${config.DESIGN.Admin}\n ${msg} \n◖Total pages available: ${totalPages}.`;
 
 
     const sentMessage = await api.shareContact(msgg, "100065445284007", threadID);
