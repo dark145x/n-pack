@@ -13,7 +13,7 @@ module.exports.config = {
   credits: "Dipto",
   description: "Ai",
   usePrefix: true,
-  commandCategory: "google",
+  commandCategory: "ai",
   cooldowns: 5,
 };
 
