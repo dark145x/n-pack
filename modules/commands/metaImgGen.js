@@ -15,7 +15,7 @@ config:{
     usePrefix: true,
   prefix: true,
     description: "Photo genarate from meta ai",
-    commandCategory: "imagination",
+    commandCategory: "ai",
   category: "imagination",
     usages: "{pn} [prompt]"
 },
