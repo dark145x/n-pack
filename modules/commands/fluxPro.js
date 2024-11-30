@@ -12,7 +12,7 @@ module.exports.config = {
   hasPermssion: 2,
   credits: "Dipto",
   description: "Generate images with Flux.1 Pro",
-  commandCategory: "𝗜𝗠𝗔𝗚𝗘 𝗚𝗘𝗡𝗘𝗥𝗔𝗧𝗢𝗥",
+  commandCategory: "Ai",
   preimum: true,
   usePrefix: true,
   usages: "{pn} [prompt] --ratio 1024x1024\n{pn} [prompt]",
