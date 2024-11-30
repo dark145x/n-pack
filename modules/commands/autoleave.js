@@ -5,7 +5,7 @@ module.exports.config = {
   hasPermssion: 0,
   credits: " Sakibin",
   description: "Automatically leaves the group if someone types anything",
-  commandCategory: "Admin",
+  commandategory: "Admin",
   usages: "No usage, runs automatically",
   cooldowns: 5,
 };
