@@ -10,7 +10,7 @@ module.exports.config = {
   commandCategory: "system",
   cooldowns: 2,
   dependencies: {
-    "pidusage": "",
+    
     "fs-extra": ""
   }
 };
