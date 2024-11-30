@@ -9,7 +9,7 @@ const config = {
         hasPermission: 0,
         description: "Tag user",
         category: "tag",
-        commandCategory: "tag",
+        commandCategory: "group",
         guide: "{pn} [reply/mention]",
         usages: "reply or mention"
     };
