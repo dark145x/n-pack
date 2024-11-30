@@ -1,12 +1,12 @@
 module.exports.config = {
 
   usePrefix: true,
-  name: "supportgroup",
+  name: "supportgc",
   version: "1.1.0",
   permission: 0,
   credits: `SAKIBIN`,
   description: `Add the user who runs the command to the support group.`,
-  category: `admin`,
+  commandCategory: `admin`,
   usages: `..`,
   cooldowns: 5
 };
