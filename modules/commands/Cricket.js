@@ -73,7 +73,7 @@ module.exports.config = {
   cooldowns: 5,
   hasPermssion: 0,
   description: "Fetch live cricket scores",
-  commandCategory: "𝗨𝗧𝗜𝗟𝗜𝗧𝗬",
+  commandCategory: "Utility",
   category: " Utility",
   usePrefix: true,
   prefix: true,
