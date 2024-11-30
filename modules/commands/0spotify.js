@@ -8,7 +8,7 @@ module.exports.config = {
     hasPermision: 0,
     credits: "sakibin", 
     description: "Search and play music from Spotify",
-    commandCategory: "spotify",
+    commandCategory: "Media",
     usage: "[song name]",
     cooldowns: 5,
     usages: "[song name]",
