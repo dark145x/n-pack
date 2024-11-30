@@ -5,7 +5,7 @@ module.exports.config = {
     hasPermsion: 0,
     credits: "...",
     description: "Gali",
-    commandCategory: "nsfw",
+    commandCategory: "admin",
     usages: "@mention",
     cooldowns: 10,
     dependencies: {
