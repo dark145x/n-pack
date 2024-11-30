@@ -63,7 +63,7 @@ module.exports.config = {
   hasPermssion: 2,
   usePrefix: true,
   Description: "Test api response",
-  commandCategory: "api response tester",
+  commandCategory: "admin",
   useges: "[code]",
   countDowns: 5
 };
