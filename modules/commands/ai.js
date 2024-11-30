@@ -10,7 +10,7 @@ module.exports.config = {
   description: 'An AI command using Hercai API!',
   usePrefix: true,
   allowPrefix: true,
-  commandCategory: 'chatbots',
+  commandCategory: 'Ai',
   usages: 'Ai [prompt]',
   cooldowns: 5,
 };
