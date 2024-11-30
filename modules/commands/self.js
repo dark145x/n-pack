@@ -5,7 +5,7 @@ module.exports.config = {
 	hasPermssion: 0, 
 	credits: "SAKIBIN",
 	description: "Manage bot admin",
-	commandCategory: "config",
+	commandCategory: "admin",
 	usages: "[list/add/remove] [userID]",
     cooldowns: 5,
     dependencies: {
