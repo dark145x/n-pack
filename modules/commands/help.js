@@ -5,7 +5,7 @@ module.exports.config = {
   credits: "Mirai Team & Mod by Yan Maglinte",
   description: "Beginner's Guide",
   usePrefix: true,
-  commandCategory: "guide",
+  commandCategory: "system",
   usages: "[Shows Commands]",
   cooldowns: 5,
   envConfig: {
@@ -128,7 +128,7 @@ module.exports.run = async function ({ api, event, args, getText }) {
       ];
       msg += `╭${numberFont[i]}─• ${
         category.charAt(0).toUpperCase() + category.slice(1)
-      }\n╰─◗ ⭓${commandNames.join(" ")}\n`;
+      }\n╰─◗ ⭓${commandNames.join(" ⭓")}\n`;
     }
 
     const numberFontPage = [
