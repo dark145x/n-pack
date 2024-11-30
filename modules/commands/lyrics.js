@@ -17,7 +17,7 @@ const baseApiUrl = async () => {
     usePrefix: true,
     prefix: true,
     description: "Get song lyrics with their Images",
-    commandCategory: "song",
+    commandCategory: "utility",
     category: " song",
     usages: "lyrics"
   },
