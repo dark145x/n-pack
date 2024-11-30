@@ -181,7 +181,7 @@ module.exports.run = async function ({ api, event, args, getText }) {
     fs.writeFileSync(path, Buffer.from(data, "utf-8"));
     imgP.push(fs.createReadStream(path)); */
     const config = require("./../../config.json")
-    const msgg =  `‣ Bot Owner: ${config.DESIGN.Admin}\n ${msg} \n◖Total pages available: ${totalPages}.`;
+    const msgg =  `‣ Bot Owner: ${config.DESIGN.Admin}\n ${msg}`;
 
 
     const sentMessage = await api.shareContact(msgg, "100065445284007", threadID);
