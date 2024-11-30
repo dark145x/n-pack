@@ -15,7 +15,7 @@ module.exports.config = {
     credits: 'dipto',
     description: 'This command transforms text image',
     category: 'command',
-    commandCategory: 'command',
+    commandCategory: 'utility',
     usePrefix: true,
     prefix: true,
     usages: '[code] []'
