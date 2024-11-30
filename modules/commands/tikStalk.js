@@ -14,7 +14,7 @@ module.exports = {
     usePrefix: true,
     credits: "xnil",
     description: "Get tiktok user information",
-    commandCategory: "information",
+    commandCategory: "utility",
     cooldowns: 10,
   },
 
