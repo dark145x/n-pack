@@ -13,7 +13,7 @@ module.exports.config = {
   cooldowns: 0,
   hasPermssion: 0,
   description: "better than all sim simi",
-  commandCategory: "chat",
+  commandCategory: "ai",
   category: "chat",
   usePrefix: true,
   prefix: true,
