@@ -15,7 +15,7 @@ module.exports.config = {
   description: "Facebook cover",
   usePrefix: true,
   prefix: true,
-  commandCategory: "Cover",
+  commandCategory: "image",
   category: " cover",
   usages: "name - title - address - email - phone - color (default = white)",
   cooldowns: 5,
