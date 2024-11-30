@@ -1,6 +1,7 @@
 module.exports.config = {
-  usePrefix: true,
-  name: "/",
+  usePrefix: false,
+  name: "uptime",
+  aliases: ["/"],
   version: "1.0.0",
   hasPermssion: 0,
   credits: "Mirai-Team",
