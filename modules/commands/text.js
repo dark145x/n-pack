@@ -7,8 +7,8 @@ usePrefix: true,
   permission: 0,
   credits: "Sakibin",
   description: "Sakibin Design",
-  commandCategory: "edit",
-  usages: "/cover",
+  commandCategory: "image",
+  usages: "[no] [text]",
   cooldowns: 10,
 };
 
