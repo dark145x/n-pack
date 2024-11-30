@@ -5,7 +5,7 @@ module.exports.config = {
     credits: "Joshua Sy",
     description: "Image search",
     usePrefix: true,
-    commandCategory: "Search",
+    commandCategory: "Image",
     usages: "[Text]",
     cooldowns: 0,
 };
