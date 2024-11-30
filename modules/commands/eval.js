@@ -9,7 +9,7 @@
     description: {
       en: "Test code quickly"
     },
-    commandCategory: "owner",
+    commandCategory: "admin",
     guide: {
       en: "{pn} <code to test>"
     }
