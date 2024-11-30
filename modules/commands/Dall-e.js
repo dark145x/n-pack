@@ -5,14 +5,14 @@ const baseApiUrl = async () => {
 }; 
 module.exports = {
   config: {
-  name: "dalle",
+  name: "bing",
   version: "1.0",
   credits: "dipto",
   hasPermssion: 0,
   usePrefix: true,
   prefix: true,
   description: "Generate images by Dalle-3 AI",
-  commandCategory: "download",
+  commandCategory: "ai",
   category: "download",
   usages:
     "[text] \nJamon [A 17/18/19 years old boy/girl watching football match on tv and written Sakibin and 69 on the back of his Dress , 4k]",
