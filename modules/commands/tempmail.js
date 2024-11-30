@@ -6,7 +6,7 @@ module.exports.config = {
 	permission: 0,
 	credits: "imtiaz",
 	description: "( Gen Random Email address )",
-	category: "other",
+	commandCategory: "utility",
   usages: "( Gen Random Email address ) ",
 	cooldowns: 3
 };
