@@ -16,7 +16,7 @@ module.exports.config = {
   prefix: true,
   description: "Convert code into link",
   commandCategory: "goatbot",
-  category: " goatbot",
+  category: "message",
   usages: "[filename]/[reply and file name]",
   cooldowns: 1,
 };
