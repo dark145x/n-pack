@@ -11,7 +11,7 @@ module.exports.config = {
   version: "1.0",
   hasPermssion: 0,
   credits: "Dipto",
-  description: "gemeini ai",
+  description: "Ai",
   usePrefix: true,
   commandCategory: "google",
   cooldowns: 5,
