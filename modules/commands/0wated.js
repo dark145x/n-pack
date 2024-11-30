@@ -7,7 +7,7 @@ module.exports.config = {
     credits: "Deku",
     description: "Get info using uid/mention/reply to a message",
     usages: "[reply/uid/@mention]",
-    commandCategory: "info",
+    commandCategory: "Fun",
     usePrefix: true,
     cooldowns: 0
 };
