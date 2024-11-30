@@ -14,7 +14,7 @@ module.exports.config = {
   cooldowns: 5,
   hasPermssion: 0,
   description: "View Prayer time",
-  commandCategory: "islam",
+  commandCategory: "other",
   category: " islam",
   usages: "{pn} <city name>",
 };
