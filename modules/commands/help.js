@@ -19,7 +19,7 @@ module.exports.languages = {
     moduleInfo:
       "「 %1 」\n%2\n\n❯ Usage: %3\n❯ Category: %4\n❯ Waiting time: %5 seconds(s)\n❯ Permission: %6\n\n» Module code by Sakibin ",
     helpList:
-      `◖There are %1 commands and %2 categories on this bot.`,
+      `◖Total %1 cmd or %2 categories.`,
     guideList:
       `◖Use: "%1${this.config.name} ‹command›" to know how to use that command!\n◖Type: "%1${this.config.name} ‹page_number›" to show that page contents!`,
     user: "User",
