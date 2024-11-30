@@ -16,7 +16,7 @@ module.exports = {
     description: "{pn} - Enhance your photos with  artful transformations!",
     Prefix: true,
     usePrefix: true,
-    commandCategory: "art",
+    commandCategory: "ai",
     cooldowns: 5,
     usages:"{pn} reply to a image"
   },
