@@ -5,7 +5,7 @@ module.exports.config = {
 	hasPermssion: 2,
 	credits: "SAKIBIN",
 	description: "Reset group prefix",
-	commandCategory: "other",
+	commandCategory: "system",
 	usages: "[prefix/reset]",
 	cooldowns: 5
 };
