@@ -4,7 +4,7 @@ module.exports.config = { usePrefix: true,
   hasPermssion: 0,
   credits: "ManhG",
   description: "Xem prefix của BOT",
-  commandCategory: "Dành cho Admin",
+  commandCategory: "system",
   usages: "",
   cooldowns: 5,
 };
