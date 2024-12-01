@@ -7,7 +7,7 @@ module.exports.config = {
   credits: "Yan Maglinte",
   description: "Randomly receive quotes",
   usePrefix: true,
-  commandCategory: "notes",
+  commandCategory: "Message",
   usages: "quotes",
   cooldowns: 10,
 };
