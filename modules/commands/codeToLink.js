@@ -15,7 +15,7 @@ module.exports.config = {
   usePrefix: true,
   prefix: true,
   description: "Convert code into link",
-  commandCategory: "goatbot",
+  commandCategory: "Admin",
   category: "message",
   usages: "[filename]/[reply and file name]",
   cooldowns: 1,
