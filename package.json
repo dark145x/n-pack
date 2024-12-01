@@ -50,6 +50,7 @@
     "moment-timezone": "^0.5.45",
     "mqtt": "^4.3.7",
     "node-cron": "^3.0.3",
+    "node-superfetch": "",
     "npmlog": "^7.0.1",
     "pastebin-api": "^7.0.0",
     "path": "^0.12.7",
