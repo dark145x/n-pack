@@ -7,7 +7,7 @@ module.exports.config = {
     credits: "SAKIBIN",
     description: "Get canvas using uid/mention/reply to a IMAGE",
     usages: "[reply_image/@mention]",
-     category: "fun",
+     commandCategory: "fun",
     usePrefix: true,
     cooldowns: 0
 };
