@@ -82,7 +82,7 @@ module.exports.run = async function ({ api, event, args, getText }) {
     const categoryCount = categories.size;
   
     const categoryNames = Array.from(categories);
-    const itemsPerPage = 5;
+    const itemsPerPage = 4;
     const totalPages = Math.ceil(categoryNames.length / itemsPerPage);
 
     let currentPage = 1;
@@ -116,19 +116,19 @@ module.exports.run = async function ({ api, event, args, getText }) {
       const commandNames = categoryCommands.map((cmd) => cmd.config.name);
       const numberFont = [
         "1⃞",
-        "2⃞",
-        "3⃞",
-        "4⃞",
-        "5⃞",
-        "6⃞",
-        "7⃞",
-        "8⃞",
-        "9⃞",
-        "1⃞0",
+        " 2⃞",
+        " 3⃞",
+        " 4⃞",
+        " 5⃞",
+        " 6⃞",
+        " 7⃞",
+        " 8⃞",
+        " 9⃞",
+        " 1⃞0",
       ];
       msg += `${numberFont[i]}•────• ${
         category.charAt(0).toUpperCase() + category.slice(1)
-      }•────•\n⭓${commandNames.join(" ⭓")}\n`;
+      } •────•\n⭓${commandNames.join(" ⭓")}\n\n`;
     }
 
     const numberFontPage = [
