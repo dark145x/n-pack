@@ -3,7 +3,7 @@ const APIKEY = "SAKI-BIN-SWT56X";
 module.exports.config = {
     name: "delete",
     version: "2.0.0",
-    hasPermsion: 0,
+    hasPermssion: 0,
     credits: "SAKIBIN",
     description: "Get canvas using uid/mention/reply to a IMAGE",
     usages: "[reply_image/@mention]",
