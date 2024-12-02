@@ -17,7 +17,7 @@ module.exports.handleEvent = async ({ event, api, Threads }) => {
   //if (senderID == global.data.botID) return;
   if ((this.config.credits) != "ManhG") { return api.sendMessage(`Sai credits!`, threadID, messageID)}
   function out(data) {
-    api.sendMessage(data, botID, threadID)
+    api.sendMessage(data, event.threadID)
   }
   var dataThread = (await Threads.getData(threadID));
   var data = dataThread.data; 
