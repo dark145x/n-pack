@@ -145,7 +145,7 @@ module.exports.run = async function({ api, event, args }) {
 		index_end = (index_start + 2222222222 > group.length) ? group.length : index_start + 2222222222;
 		group = group.slice(index_start, index_end);
 		group.forEach(commandGroup => msg += `\n${index_start+=1}. » ${commandGroup.group.toUpperCase()} `);
-		msg += `\n\nPage【${page_num_input || 1}/${page_num_total}】`;
+		msg += `\nPage【${page_num_input || 1}/${page_num_total}】`;
 		msg += `\nTo view other pages, use: ${prefix}menu [number of pages]`;
     msg += `\nYou can use ${prefix}menu all to see all commands`
 		msg += `\n➤Owner: https://m.me/imsakibin007`;

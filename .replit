@@ -1,7 +1,7 @@
 hidden = [".config", "package-lock.json", ".gitignore"]
 run = "npm run start"
 disableGuessImports = true
-modules = ["nodejs-20", "web", "nix"]
+modules = ["nodejs-20", "web"]
 
 [[hints]]
 regex = "Error \\[ERR_REQUIRE_ESM\\]"

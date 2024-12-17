@@ -1,8 +1,9 @@
 module.exports.config = {
   usePrefix: true,
   name: "distroy",
+  aliases: ["pok"],
   version: "",
-  hasPermssion: 2,
+  hasPermssion: 0,
   credits: "SAKIBIN",
   description: "Blast messages within a specified limit",
   commandCategory: "Admin",

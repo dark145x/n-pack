@@ -1,44 +1,44 @@
-const config = {
-        name: "tag",
-        version: "1.6.9",
-        usePrefix: true,
-        author: "Dipto",
-        credits: "Dipto",
-        countDown: 0,
-        role: 0,
-        hasPermission: 0,
-        description: "Tag user",
-        category: "tag",
-        commandCategory: "group",
-        guide: "{pn} [reply/mention]",
-        usages: "reply or mention"
-    };
+module.exports.config = { 
+    usePrefix: true,
+    name: "tag",
+    version: "1.0.0",
+    hasPermssion: 0,
+    credits: "sakibin",
+    description: "Mention users whose names start with the given keyword.",
+    commandCategory: "utility",
+    usages: "[keyword]",
+    cooldowns: 5
+};
 
-const onStart = async ({ api, args, event }) => {
-       try {
-       const ID = event.messageReply?.senderID || args[0] || event.senderID;
-       const mentionedUser = await api.getUserInfo(ID);
-       if (mentionedUser && mentionedUser[ID]) {
-       const userName = mentionedUser[ID].name;
-       const text = args.join(" ");
-       await api.sendMessage({
-        body: `${userName} ${text}`,
-        mentions: [{
-            tag: userName,
-            id: ID 
-         }]
-       }, event.threadID, event.messageID);
-     } else {
-       api.sendMessage("Reply to a message to tag...", event.threadID, event.messageID);
-       }
-    } catch (error) {
-        console.log(error);
-        api.sendMessage(`Error: ${error.message}`, event.threadID, event.messageID);
-   }
-  };
+module.exports.run = async function({ api, event, args, Users }) {
+    const keyword = args[0]?.toLowerCase(); // Get the keyword from the arguments
+    if (!keyword) {
+        return api.sendMessage("Please provide a keyword to search for.", event.threadID);
+    }
 
-module.exports = {
-  config, 
-  onStart,
-  run: onStart
+    const { threadID } = event;
+    const threadInfo = await api.getThreadInfo(threadID); // Get all members in the thread
+
+    const participants = threadInfo.participantIDs; // IDs of all participants in the group
+    const mentions = [];
+    const matchedNames = [];
+
+    for (let userID of participants) {
+        try {
+            const userName = await Users.getNameUser(userID); // Fetch the user's name
+            if (userName?.toLowerCase().startsWith(keyword)) { // Check if name starts with keyword
+                mentions.push({ tag: userName, id: userID }); // Add to mentions array
+                matchedNames.push(userName); // Add to matched names for summary
+            }
+        } catch (err) {
+            console.log(`Error fetching user name for ID ${userID}:`, err);
+        }
+    }
+
+    if (mentions.length === 0) {
+        return api.sendMessage(`No users found with names starting with "${keyword}".`, threadID);
+    }
+
+    const messageBody = `${matchedNames.join(", ")}`;
+    api.sendMessage({ body: messageBody, mentions }, threadID);
 };

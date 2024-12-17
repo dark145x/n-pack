@@ -40,7 +40,7 @@
     "fs-extra": "^11.2.0",
     "get-latest-version": "^5.1.0",
     "gradient-string": "^2.0.2",
-    "hercai": "^12.3.2",
+    "hercai": "^12.4.0",
     "https-proxy-agent": "^7.0.2",
     "jimp": "^0.22.12",
     "lodash.pad": "^4.5.1",
@@ -49,8 +49,10 @@
     "moment": "^2.30.1",
     "moment-timezone": "^0.5.45",
     "mqtt": "^4.3.7",
+    "nayan-server": "",
     "node-cron": "^3.0.3",
-    "node-superfetch": "",
+    "node-superfetch": "^0.3.4",
+    "node-telegram-bot-api": "",
     "npmlog": "^7.0.1",
     "pastebin-api": "^7.0.0",
     "path": "^0.12.7",
@@ -62,8 +64,7 @@
     "tinyurl": "^1.1.7",
     "websocket-stream": "^5.5.2",
     "youtube-search-api": "^1.2.1",
-    "yt-search": "^2.12.1",
-    "node-telegram-bot-api": ""
+    "yt-search": "^2.12.1"
   },
   "repository": {
     "type": "git",
